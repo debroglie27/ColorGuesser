@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    min-height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #1ebd02 20%, #01afa4, #068ad6, #3a30f0, #8006d6 80%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 30px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.random-color, .my-color {
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.input-label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.input-container p {
+    font-size: 1.6rem;
+}
+
+input {
+    width: 140px;
+    height: 35px;
+    outline: none;
+    appearance: none;
+    font-size: 1.15rem;
+    background-color: #fefefe;
+    border: none;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 160px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: #008c25;
+    background-color: #008c25;
+    color: white;
+}
+
+footer {
+    color: #00339a;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
