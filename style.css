@@ -23,7 +23,7 @@ main {
 
 h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-family: sans-serif;
     background: linear-gradient(to right, #1ebd02 20%, #01afa4, #068ad6, #3a30f0, #8006d6 80%);
     -webkit-text-fill-color: transparent;
@@ -37,10 +37,11 @@ h1 {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    padding: 0px 10px;
 }
 
 .random-color, .my-color {
-    width: 200px;
+    width: 160px;
     height: 100px;
     background-color: #ffffff;
     border: 2px solid black;
@@ -55,7 +56,7 @@ h1 {
 }
 
 label {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
@@ -67,15 +68,15 @@ label {
 }
 
 .input-container p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 input {
-    width: 140px;
-    height: 35px;
+    width: 120px;
+    height: 32px;
     outline: none;
     appearance: none;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     background-color: #fefefe;
     border: none;
     border: 1px solid black;
@@ -89,13 +90,12 @@ input {
 }
 
 .btn {
-    width: 160px;
     background-color: white;
     border: 2px solid black;
     border-radius: 5px;
     color: black;
-    font-size: 1.2rem;
-    padding: 8px 15px;
+    font-size: 1.1rem;
+    padding: 8px 20px;
     cursor: pointer;
 }
 
@@ -106,7 +106,35 @@ input {
 }
 
 footer {
-    color: #00339a;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-bottom: 3px;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .random-color, .my-color {
+        width: 200px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 25px;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    .input-container p {
+        font-size: 1.6rem;
+    }
+    
+    input {
+        width: 140px;
+        height: 35px;
+        font-size: 1.15rem;
+    }
 }
