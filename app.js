@@ -1,3 +1,4 @@
+// Color Containers
 const myColorContainer = document.querySelector('.my-color');
 const randomColorContainer = document.querySelector('.random-color');
 
