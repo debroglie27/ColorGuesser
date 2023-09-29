@@ -26,6 +26,7 @@ function generateRandomColor() {
     return randomColor;
 }
 
+// Evaluate Guessed Color
 function evaluateColor() {
     if (inputColor.toLowerCase() === randomColor.toLowerCase()) {
         setTimeout(() => {
